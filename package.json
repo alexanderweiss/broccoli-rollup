@@ -7,7 +7,7 @@
     "build": "rm -rf dist && tsc",
     "test": "npm run build && nyc --check-coverage --functions 90 --lines 90 --statements 90 -- qunit dist/tests/index.js",
     "test:fast": "qunit dist/tests/index.js",
-    "prepublish": "npm run build"
+    "preinstall": "npm run build"
   },
   "keywords": [
     "broccoli",
